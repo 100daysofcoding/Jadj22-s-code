@@ -1,0 +1,162 @@
+# C'est un programme pour vous aider à choisir les composants de votre PC.
+#  J'ai eu l'idée, mais des contraintes de temps ont retardé sa finalisation.
+#  Heureusement, j'ai eu de l'aide
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Components_PC.css">
+    <title>Configurateur PC</title>
+</head>
+<body>
+    <form id="pcConfigurator">
+        <h1>Contruit ton PC</h1>
+        <div>
+            <label for="processeur">Processeur :</label>
+            <select id="processeur" required>
+                <option value="Obligation"></option>
+                <option value="Intel i9">Intel i9</option>
+                <option value="AMD Ryzen 9">AMD Ryzen 9</option>
+                <option value="Intel i7">Intel i7</option>
+                <option value="AMD Ryzen 7">AMD Ryzen 7</option>
+                <option value="Intel i9-12900K">Intel i9-12900K</option>
+                <option value="AMD Ryzen 9 5950X">AMD Ryzen 9 5950X</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="ram">Mémoire (RAM) :</label>
+            <select id="ram">
+                <option value="Obligation"></option>
+                <option value="Corsair Vengeance">Corsair Vengeance</option>
+                <option value="G.Skill Ripjaws">G.Skill Ripjaws</option>
+                <option value="Kingston HyperX">Kingston HyperX</option>
+                <option value="Crucial Ballistix">Crucial Ballistix</option>
+                <option value="Corsair Dominator Platinum">Corsair Dominator Platinum</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="disque1">Disque 1 (Obligatoire) :</label>
+            <select id="disque1" required>
+                <option value="Obligation"></option>
+                <option value="Samsung 970 EVO">Samsung 970 EVO</option>
+                <option value="WD Blue">WD Blue</option>
+                <option value="Seagate Barracuda">Seagate Barracuda</option>
+                <option value="WD Black SN850">WD Black SN850</option>
+                <option value="Crucial P5">Crucial P5</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="disque2">Disque 2 :</label>
+            <select id="disque2">
+                <option value="Obligation"></option>
+                <option value="Samsung 970 EVO">Samsung 970 EVO</option>
+                <option value="WD Blue">WD Blue</option>
+                <option value="Seagate Barracuda">Seagate Barracuda</option>
+                <option value="WD Black SN850">WD Black SN850</option>
+                <option value="Crucial P5">Crucial P5</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="stockageM2">Stockage M.2 :</label>
+            <select id="stockageM2">
+                <option value="Obligation"></option>
+                <option value="Samsung 970 EVO">Samsung 970 EVO</option>
+                <option value="WD Blue">WD Blue</option>
+                <option value="Seagate Barracuda">Seagate Barracuda</option>
+                <option value="WD Black SN850">WD Black SN850</option>
+                <option value="Crucial P5">Crucial P5</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="utiliserM2CommeBoot">Utiliser le stockage M.2 comme disque d'amorçage ?</label>
+            <select id="utiliserM2CommeBoot">
+                <option value="Obligation"></option>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="stockageM2Secondaire">Stockage M.2 Secondaire :</label>
+            <select id="stockageM2Secondaire">
+                <option value="Obligation"></option>
+                <option value="Samsung 970 EVO">Samsung 970 EVO</option>
+                <option value="WD Blue">WD Blue</option>
+                <option value="Seagate Barracuda">Seagate Barracuda</option>
+                <option value="WD Black SN850">WD Black SN850</option>
+                <option value="Crucial P5">Crucial P5</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="carteGraphique">Carte Graphique (Obligatoire) :</label>
+            <select id="carteGraphique" required>
+                <option value="Obligation"></option>
+                <option value="NVIDIA RTX 3080">NVIDIA RTX 3080</option>
+                <option value="AMD RX 6800 XT">AMD RX 6800 XT</option>
+                <option value="NVIDIA GTX 1660">NVIDIA GTX 1660</option>
+                <option value="NVIDIA RTX 4090">NVIDIA RTX 4090</option>
+                <option value="AMD RX 6900 XT">AMD RX 6900 XT</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="carteGraphiqueSecondaire">Carte Graphique Secondaire (doit correspondre à la carte graphique principale) :</label>
+            <select id="carteGraphiqueSecondaire">
+                <option value="Aucune">Pas de carte graphique secondaire</option>
+                <option value="NVIDIA RTX 3080">NVIDIA RTX 3080</option>
+                <option value="AMD RX 6800 XT">AMD RX 6800 XT</option>
+                <option value="NVIDIA GTX 1660">NVIDIA GTX 1660</option>
+                <option value="NVIDIA RTX 4090">NVIDIA RTX 4090</option>
+                <option value="AMD RX 6900 XT">AMD RX 6900 XT</option>
+                <option value="AMD Radeon RX 5500 XT">AMD Radeon RX 5500 XT</option>
+                <option value="NVIDIA Tesla V100">NVIDIA Tesla V100</option>
+                <option value="AMD Radeon RX 6400">AMD Radeon RX 6400</option>
+                <option value="NVIDIA GeForce GT 1030">NVIDIA GeForce GT 1030</option>
+                <option value="AMD Radeon Pro VII">AMD Radeon Pro VII</option>
+                <option value="NVIDIA Titan RTX">NVIDIA Titan RTX</option>
+                <option value="AMD Radeon RX 6300">AMD Radeon RX 6300</option>
+                <option value="NVIDIA Quadro P5000">NVIDIA Quadro P5000</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="systemeExploitation">Système d'exploitation :</label>
+            <select id="systemeExploitation">
+                <option value="Windows 10 Pro">Windows 10 Pro</option>
+                <option value="Windows 10">Windows 10</option>
+                <option value="Linux Ubuntu">Linux Ubuntu</option>
+                <option value="macOS">macOS</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="lecteurOptique">Lecteur Optique :</label>
+            <select id="lecteurOptique">
+                <option value="Non">Non</option>
+                <option value="DVD-RW">DVD-RW</option>
+                <option value="Blu-ray">Blu-ray</option>
+                <option value="Aucun">Aucun</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="sourisClavier">Souris et Clavier :</label>
+            <select id="sourisClavier">
+                <option value="Membrane">Membrane</option>
+                <option value="Mechanique">Mechanique</option>
+                <option value="Logitech Combo MK270">Logitech Combo MK270</option>
+                <option value="Corsair K95 RGB Platinum XT">Corsair K95 RGB Platinum XT</option>
+                <option value="Razer DeathAdder Elite">Razer DeathAdder Elite</option>
+                <option value="Aucun">Aucun</option>
+            </select>
+        </div>
+    </body>
+    </html>
