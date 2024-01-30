@@ -1,0 +1,113 @@
+/* Importation de la police Muli depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Définition des variables pour les couleurs de la ligne de progression */
+:root {
+    --line-border-fill: #3498db; /* Couleur de la ligne de progression remplie */
+    --line-border-empty: #383838; /* Couleur de la ligne de progression vide */
+}
+
+/* Réinitialisation du modèle de boîte et définition de la police par défaut pour le corps du document */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f1f; /* Couleur de fond du corps du document */
+    font-family: 'Muli', sans-serif; /* Utilisation de la police Muli pour le texte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Hauteur du corps du document équivalente à 100% de la hauteur de la vue */
+    overflow: hidden; /* Masquage du défilement de la page */
+    margin: 0; /* Suppression des marges par défaut */
+}
+
+/* Style pour le conteneur principal de l'interface */
+.container {
+    text-align: center;
+}
+
+/* Style pour le conteneur de progression (étapes) */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+/* Style pour la ligne de progression (avant) */
+.progress-container::before {
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Style pour la partie remplie de la ligne de progression (avant) */
+.progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+/* Style pour les cercles représentant chaque étape */
+.circle {
+    background-color: #1f1f1f;
+    color: #e2e2e2;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+}
+
+/* Style pour le cercle actif (étape actuelle) */
+.circle.active {
+    border-color: var(--line-border-fill);
+}
+
+/* Style pour les boutons de navigation */
+.btn {
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* Style pour l'effet d'appui sur les boutons */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Style pour supprimer la bordure de focus sur les boutons */
+.btn:focus {
+    outline: 0;
+}
+
+/* Style pour les boutons désactivés */
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}

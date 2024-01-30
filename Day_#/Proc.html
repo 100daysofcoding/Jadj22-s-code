@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Proc.css" /> <!-- Lien vers la feuille de style Proc.css -->
+    <title>Étapes de progression</title>
+</head>
+<body>
+    <div class="container">
+        <div class="progress-container">
+            <div class="progress" id="progress"></div> <!-- Conteneur pour la barre de progression -->
+            <div class="circle active">1</div> <!-- Première étape (cercle actif) -->
+            <div class="circle">2</div> <!-- Deuxième étape -->
+            <div class="circle">3</div> <!-- Troisième étape -->
+            <div class="circle">4</div> <!-- Quatrième étape -->
+        </div>
+
+        <button class="btn" id="prev" disabled>Précédent</button> <!-- Bouton "Précédent" désactivé initialement -->
+        <button class="btn" id="next">Suivant</button> <!-- Bouton "Suivant" -->
+    </div>
+    <script src="Proc.js"></script> <!-- Inclusion du script JavaScript Proc.js -->
+</body>
+</html>
