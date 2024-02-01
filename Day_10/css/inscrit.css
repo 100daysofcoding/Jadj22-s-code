@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn{
+    background-color: #08A88A;
+    color: #ffffff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.option{
+    color: black;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 20px;
+    font-size: 15px;
+    display: block;
+    font-weight: 500;
+}
+
+.btn1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 3px;
+}
+
+.btn1:hover{
+    font-weight: bolder;
+}
+
+.btn2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 3px;
+
+}
+
+.btn2:hover{
+    font-weight: bolder;
+}
+h1{
+    margin-bottom: 25px;
+}
+.gtion_espace{
+    justify-content: center;
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.connectEmailPass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+input[type=text],
+input[type=password] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    -webkit-appearance: none;
+    border: 2px solid rgb(0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    outline: none;
+}
+
