@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    margin: 15px;
+}
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 1.5em;
+}
+
+.container-links {
+    margin-right: 10.5em;
+}
+
+.container-links li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.5em;
+    margin: 1.5em;
+}
+
+.container-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.container-links li a:hover {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+.container-links {
+    display: block;
+}
+
+.burger-menu{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-links ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: inline-block;
+        font-size: 40px;
+        align-items: center;
+        position: relative;
+        margin-left: 80%;
+    }
+}
+
+main {
+    margin-top: 10em;
+    margin-left: 10em;
+}
+
+#about p{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Personaliser{
+    color: #0071E3;
+}
+
+.fa-brands{
+    font-size: 25px;
+    color: #000000;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    width: 60%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 2.5em;
+    margin-left: 60px;
+
+}
+
+.social-icons a {
+    width: 30px;
+    font-size: 25px;
+}
+
+.btn{
+    margin-top: 2.5em;
+    padding: 0.8em;
+    background-color: transparent;
+    color: #000000;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.btn1{
+    margin-top: 2.5em;
+    padding: 0.8em;
+    background-color: #0071E3;
+    color: #fff;
+    border-radius: 35px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lesBoutns{
+    display: block;
+    justify-content: space-between;
+}
+
+.btn:hover{
+    margin-top: 2.5em;
+    padding: 0.8em;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profil {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    font-size: 40px;
+    align-items: center;
+    position: relative;
+    margin-left: 60%;
+}
+
+img {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0px 0px  50% 50%;
+    margin-top: -400px;
+}
