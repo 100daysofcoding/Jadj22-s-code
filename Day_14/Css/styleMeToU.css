@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: #f0f0f0;
+}
+
+.boite {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0071E3;
+    height: 3.5em;
+    color: #fff;
+}
+
+.titre {
+    font-size: 2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+.titre h1 {
+    text-align: left;
+}
+
+.objetsliste li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.objetsliste li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.objetsliste li a:hover {
+    background-color: #fff;
+    color: #0071E3;
+}
+
+.btn{
+    border: none;
+    /* background-color: transparent; */
+}
+
+.fa-magnifying-glass,
+.fa-arrow-right-to-bracket,
+.telecharger {
+    background-color: #0071E3;
+    color: #fff;
+    padding: 1em;
+    border: none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass:hover,
+.fa-arrow-right-to-bracket:hover{
+    background-color: #fff;
+    color: #0071E3;
+}
+.telecharger:hover {
+    background-color: #fff;
+    color: #0071E3;
+    /* border-radius: 25px; */
+}
+
+main{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.titreMain{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #0071E3;
+}
+
+.paragraphe{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #0071E3;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.fa-chevron-right{
+    font-size: 20px;
+}
+footer {
+    background-color: #0071E3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    padding: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.contenu-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blo {
+    flex: 1;
+    max-width: 200px;
+    margin: 0 10px;
+}
+
+.blo h3 {
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.liste-services {
+    list-style: none;
+    padding: 0;
+}
+
+.liste-services li {
+    margin-bottom: 8px;
+}
+
+.blo ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.blo ul a{
+    color: #fff;
+}
+.blo i {
+    font-size: 24px;
+}
+
+footer p {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.contacte{
+    margin-top: 10px;
+}
+
