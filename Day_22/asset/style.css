@@ -50,12 +50,7 @@ body{
     margin: 0px 30px;
     transition: transform 0.3s ease;
 }
-/* La gestion précise des transitions peut
-parfois être difficile. De plus, lors de
-l'activation de la transition, les autres
-éléments autour de l'élément en transition
-peuvent se déplacer ou s'espacer de manière
-inattendue.*/
+
 
 /* Pour prochainement je vais mettre sur le ligne
 du logo deux boutons(S'inscrire et se connecter)
