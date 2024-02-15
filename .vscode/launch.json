@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Projet_Github_All_Coding/Day_5",
-      "program": "d:/Projet_Github_All_Coding/Day_5/build/Debug/outDebug",
+      "cwd": "d:/DeuxiemeAnneeProgramationHTML_PY_C_sur_VSC/CodingC/StructEnC_C",
+      "program": "d:/DeuxiemeAnneeProgramationHTML_PY_C_sur_VSC/CodingC/StructEnC_C/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
