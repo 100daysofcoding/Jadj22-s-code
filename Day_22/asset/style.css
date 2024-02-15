@@ -119,13 +119,12 @@ et j'ameliorai les autres options si possible*/
     .header-layout, .header-links{
         display: flex;
         flex-wrap: wrap;
-        /* margin: 20px 0px; */
+        margin: 20px;
     }
     .header-logo{
         display: flex;
         background-color: #4a4a4a;
         padding: 20px 50%;
-        border-radius: 20px;
         color: #F0F0F0;
     }
         .bouton .btn-responsive .btnRespon{
