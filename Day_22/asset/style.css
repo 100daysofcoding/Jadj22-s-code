@@ -9,6 +9,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
@@ -19,7 +20,7 @@ body{
     margin: 30px;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    flex-basis: 100%;
     margin-top: 15px;
 }
 
@@ -27,6 +28,7 @@ body{
     font-size: 30px;
     font-display: flex;
     cursor: pointer;
+    width: 100%;
 }
 
 .header-links{
@@ -42,9 +44,12 @@ body{
     list-style-type: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header-links ul li a{
+    display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     color: #4a4a4a;
     margin: 0px 30px;
@@ -61,7 +66,9 @@ et j'ameliorai les autres options si possible*/
     /* font-weight: 550; */
 }
 
-
+.btnRespon{
+    display: none;
+}
 .bouton{
     display: flex;
 }
@@ -108,6 +115,46 @@ et j'ameliorai les autres options si possible*/
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
 }
 
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.features {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.feature {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+.contact {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: scroll;
+}
+
+
+
+
 @media screen and (max-width:1500px){
     .bouton{
         display: none;
@@ -115,21 +162,107 @@ et j'ameliorai les autres options si possible*/
 
 }
 
-@media screen and (max-width:1000px){
-    .header-layout, .header-links{
+@media screen and (max-width: 1050px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .header-layout{
+        margin-left:0;
+        display: flex;
+        flex-wrap:wrap;
+        flex-basis:100%;
+        width:  100%;
+        margin-top: 0;
+
+    }
+
+    .header-logo{
+        background-color: #4a4a4a;
+        width: 100%;
+        color: white;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .header-logo h1{
         display: flex;
         flex-wrap: wrap;
-        margin: 20px;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 50%;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
-    .header-logo{
+
+    .header-links ul li a{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap:wrap;
+        width: 50%;
+        position: relative;
+        left: 0;
+        margin: 10px;
+    }
+
+    .header-links ul li{
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .btn-responsive{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        padding:  8px 1px;
+        margin-left: 20px;
+        border: none;
+        border-radius: 20px;
+        /* order: 0; */
+    }
+
+    .btn-responsive .btnRespon{
+        display: flex;
+        justify-content: center;
+        margin: 0px 10px;
+        border: none;
+        flex-basis: 100%;
+        font-weight: 400;
+        cursor: pointer;
+        padding: 10px 10px;
+        font-size: 15px;
+        color: rgb(5, 5, 5);
+        border-radius: 10px;
+    }
+
+    .btn-responsive .btnRespon:hover{
         background-color: #4a4a4a;
-        padding: 20px 50%;
         color: #F0F0F0;
-    }
-        .bouton .btn-responsive .btnRespon{
-        display: flex;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
     }
 
 }
+
+@media screen and (max-width:500px){
+    .header-links .linksShow2{
+        display: none;
+    }
+    .linksShow1{
+        display: flex;
+        font-weight: bold;
+    }
+}
+
+
 
