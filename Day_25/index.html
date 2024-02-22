@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre Javascript</title>
+</head>
+<body>
+    
+    <script>
+
+        let guess = 8
+        let chiffre
+        while(chiffre !== guess){
+            chiffre = prompt("Votre chiffre : ")*1
+            if(chiffre < guess){
+                console.log("Dommage")
+            }else if(chiffre > guess){
+                console.log("Moins")
+            }
+        }
+        console.log("Bravo ! vous avez deviné")
+        // alert(`Félicitations vous avez trouvé le nombre ${guess}`)
+        // {
+        //     console.log("Vous avez deviner")
+        // }
+
+        // let chiffres = prompt("Saisir un nombre compris entre 1 et 10")
+        // if(isNaN(chiffres)){
+        //     console.log(`Erreur, ${chiffres} n'est pas un chiffre`)
+        // } else if(chiffres > 10 || chiffres < 0){
+        //     console.log("Veuillez saisir un chiffre compris entre 1 et 10")
+        // }else{
+        //     for(let i = chiffres; i >= 0; i--){
+        //         console.log(i)
+        //     }
+        //     while(chiffres >= 0){
+        //         console.log(chiffres)
+        //         chiffres--
+        //     }
+        // }
+
+        
+
+        // for(let i=0; i<10; i++){
+        //     console.log("Bonjour")
+        // }
+
+        // const notes = [12,23,34,45,56,34,90,78]
+        // for(let i in notes){
+        //     console.log(i)
+        //     i++
+        // }
+        // const A = prompt("Valeur de A ")
+        // const B = prompt("Valeur de B ")
+
+        // const E = A*B
+        // let signe
+
+        // if(isNaN(E)){
+        //     console.log(`Operation imposible ${A}x${B}=${E}`)
+        // }else {
+        //     if(E < 0){
+        //         signe = 'negative'
+        //     } else{
+        //         signe = 'positive'
+        //     }
+        //     console.log(`${A}x${B}=${E} est ${signe}`)
+        // }
+
+                
+        //On crée un tableau pour stocker les films
+        // const films = ["Le Petit Prince","Matrix", "DeadEvil"];
+        // const year = 2024
+        // const birthyear = prompt("Quel est votre année de naissance ? ")
+        
+        // const age = year - birthyear
+                
+        // if(age < 13){
+        //     console.log("Le Petit Prince")
+        // } else if(age > 13 && age < 18 ){
+        //     console.log("Matrix")
+        // } else{
+        //     console.log("DeadEvil")
+        // }
+
+        // if(age <= 13){
+        //     console.log("Le Petit Prince")
+        // } else if(age < 18 ){
+        //     console.log("Matrix")
+        // } else{
+        //     console.log("DeadEvil")
+        // }
+        // switch(age){
+        //     case (age < 13):
+        //         console.log("Je vous conseil Le Petit Prince c'est bon pour votre age")
+        //         break
+        //     case ( age>13 &&  age<18):
+        //         console.log("Pour une jeunesse epanouis, je vous conseil  Matrix ")
+        //         break
+        //     case (age  >= 18) :
+        //         console.log("Vous pouvez regarder DeadEvil")
+        //         break
+        //     default:
+        //         console.log("Votre age")
+        // }
+    </script>
+</body>
+</html>
