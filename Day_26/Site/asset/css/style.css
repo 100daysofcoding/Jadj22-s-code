@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10%;
+    backdrop-filter:  blur(5px);
+}
+
+.links ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.links a:hover{
+    color: #929292;
+}
+
+.bx.bx-map-pin.bx-flashing{
+    font-size: 30px;
+    cursor: pointer;
+    color: #000000;
+}
+    /* color: linear-gradient(135deg, #2c3e50, #b7bec3); */
+    /* color: #d1d1d1; j'aime b1 ce couleur pour le pin mais ca peut pas être la meilleure idée*/
+        /* color: #CCCCCC; */
+
+
+.btn{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.btn .bntDemarrer{
+    padding:  6px 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.bntDemarrer:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.btn .btnRejoindre{
+    padding:  6px 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btnRejoindre:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+main{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.entete h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 50px 20px 50px;
+    text-align: justify;
+    font-size: 33px;
+    flex-wrap: wrap;
+}
+
+.sousEntete p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: justify;
+    color: #929292;
+}
+
+.btn-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.bx.bx-right-arrow-alt{
+    font-size: 20px;
+}
+.btnAventure{
+    display: flex;
+    align-items: center;
+    padding:  6px 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 15px;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btnAventure:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.btnExplore{
+    padding:  6px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btnExplore:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+
+.cadresTextImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.Image1-redimension{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+    transition: all;
+}
+
+.Image1-redimension:hover{
+    /* width: 400px;
+    height: 400px; */
+    transition: 0.5s ease-in-out all;
+}
+
+.cadresText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.cadreText1{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+    padding: 160px 30px;
+}
+
+.btnForMiddle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.MiddleBt{
+    display: flex;
+    align-items: center;
+    padding:  6px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.MiddleBt:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
