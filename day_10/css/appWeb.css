@@ -12,14 +12,20 @@ body{
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    justify-content: space-around;
     flex-direction: column;
     color: #fff;
+    box-shadow: 0px 4px 6px white;
 }
 
 .logoApp{
-    margin: 20px 45px;
+    margin: 20px 65px;
+    cursor: pointer;
+}
+
+.logoApp:hover{
+    background-color: #ffffff4a;
 }
 
 .header-links{
