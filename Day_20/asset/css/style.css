@@ -74,7 +74,20 @@ body{
     justify-content: space-around;
     padding: 50px;
     cursor: pointer;
+    color: #d00a0a;
 }
+
+li{
+    padding: 8px;
+}
+
+li:hover {
+    background-color: #ccc;
+    padding: 8px;
+    color: black;
+    border-radius: 6px;
+}
+
 
 
 

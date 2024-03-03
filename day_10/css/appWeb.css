@@ -11,23 +11,23 @@ body{
     background-color: #000;
 }
 
-main{
-    display: block;
+.lesBtns{
+    
+    /* display: block;
     justify-content: space-around;
     flex-direction: column;
     color: #fff;
     width: 25%;
-    border-right: 1px solid white;
+    border-right: 1px solid white; */
 }
 
-
-.logoApp{
+/* .logoApp{
     margin: 20px 65px;
     cursor: pointer;
-    /* border-bottom: 1px solid white;
-    width: 69%; */
-}
-
+    border-bottom: 1px solid white;
+    width: 69%;
+} */
+/* 
 .logoApp:hover{
     background-color: #ffffff4a;
 }
@@ -65,4 +65,4 @@ main{
 .content{
     display: flex;
     flex-direction: row;
-}
+} */

@@ -10,7 +10,7 @@
     <title>SocialApp</title>
 </head>
 <body>
-    <main>
+    <div class="lesBtns">
         <h1 class="logoApp">Social</h1>
         <div class="main-links">
             <!-- <div class="ligne"><hr></div> -->
@@ -27,23 +27,20 @@
                 <li><a href="#">Déconnexion</a></li>
             </ul>
         </div>
-        <section class="content">
-            <article class="publication">
-                <i class='bx bxs-quote-alt-left quoteIcon' ></i>
-            </article>
-            <form action="" method="post" enctype="multipart/form-data" class="pubForm">
-                @csrf
-                <textarea placeholder="Que voulez vous partager ?" id="textPub"></textarea>
-                <input type="file" accept=".jpg,.jpeg,.png,.gif" id="imgPub"/>
-                <label for="imgPub">Ajouter une image</label>
-                <button type="submit" class="btn">
-                    Publier
-                </button>
-                </form>
-                </section>
-                
-            </form>
-        </section>
-    </main>
+    </div>
+    <div class="content">
+        <article class="publication">
+            <i class='bx bxs-quote-alt-left quoteIcon' ></i>
+        </article>
+        <form action="" method="post" enctype="multipart/form-data" class="pubForm">
+            @csrf
+            <textarea placeholder="Que voulez vous partager ?" id="textPub"></textarea>
+            <input type="file" accept=".jpg,.jpeg,.png,.gif" id="imgPub"/>
+            <label for="imgPub">Ajouter une image</label>
+            <button type="submit" class="btn">
+                Publier
+            </button>
+        </form>
+    </div>
 </body>
 </html>
