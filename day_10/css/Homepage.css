@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-logo-search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.nav-layout{
+    background-color:#242526;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    height: 60px;
+}
+
+
+.logo i{
+    font-size: 30px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+.search {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: #3A3B3C;
+    cursor: pointer;
+}
+
+.search-text{
+    background-color: transparent;
+    padding: 1px;
+    border: none;
+    outline: none;
+    color: #ffffffc3;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.search-bar {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-icon {
+    background-color: transparent;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.search-icon:hover{
+    background-color: #ccc;
+    padding: 8px 10px;
+    color: #000;
+    border-radius: 80px;
+    transition: 0.1s ease-out;
+}
+
+.nav-links-middle ul li{
+    display: inline;
+    list-style-type: none;
+    justify-content: space-around;
+    /* padding: 20px; */
+    padding: 15px 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav-links-middle ul li:hover{
+    background-color: #ccc;
+    padding: 15px 50px;
+    color: black;
+    border-radius: 6px;
+    transition: 0.3s ease-out;
+}
+
+li{
+    padding: 8px;
+    font-size: 18px;
+}
+
+.nav-links-left li:hover {
+    background-color: #ccc;
+    padding: 8px;
+    color: black;
+    border-radius: 6px;
+    transition: 0.3s ease-out;
+}
+/*
+@media screen and (max-width:700px){
+    .fa-
+} */
+
+
+
+.nav-links-left ul li{
+    display: inline;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .nav-links-middle{
+        display: none;
+    }
+
+}
+
+.Image1{
+    width: 600px;
+    height: 650px;
+}
+
+.UserProfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 99px;
+}
+
+.section-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}

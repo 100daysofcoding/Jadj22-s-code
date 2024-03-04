@@ -55,6 +55,8 @@ body{
 h1{
     margin-bottom: 25px;
 }
+
+i{    font-size: 40px;}
 .gtion_espace{
     justify-content: center;
     margin-bottom: 50px;
