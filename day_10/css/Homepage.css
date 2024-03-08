@@ -107,6 +107,7 @@ li{
     color: black;
     border-radius: 6px;
     margin:20px;
+    width:20px;
     transition: 0.3s ease-out;
 }
 /*
