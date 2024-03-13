@@ -1,18 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+
+*{
     padding: 0;
-    background-color: #35121226;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-around;
+    height: 55px;
     align-items: center;
     overflow: hidden;
     width: 100%;
     background-color: #8B4513;
 }
+
+
+
+/* @media screen and(max-width:500px){
+    header{
+
+    }
+} */
 
 .logo-header{
     color: white;
@@ -42,6 +52,10 @@ nav ul li a:hover{
     border-radius: 3px;
     background-color: #fff;
     transition: 0.3s ease-in-out;
+}
+
+.sous-nav{
+    display: none;
 }
 
 .btn-header button{
@@ -90,12 +104,21 @@ main {
     padding: 50px 0;
     font-size: 20px;
 }
+
+.section-accueil h2{
+    margin: 25px;
+}
+
+.section-accueil > p{
+    margin-bottom: 20px;
+}
+
 .section-apropos{
     background-color: #8B4513;
-    padding: 70px;
+    padding: 40px;
     border-radius: 10px;
     color: white;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .section-apropos,
@@ -105,14 +128,23 @@ main {
     margin-top: 50px;
 }
 
-.produit {
-    margin-bottom: 20px;
+
+.image-style{
+    display:  flex;
+    background-color: #8B4513;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
 
-.produit img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.imageA{
+    display: flex;
+    justify-content: space-around;
+    width:auto ;
+    height: 318px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .temoinage {
