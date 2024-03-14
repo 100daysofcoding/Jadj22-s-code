@@ -1,0 +1,316 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 55px;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background-color: #8B4513;
+}
+
+@media screen and (max-width: 1000px){
+    .nav-header{
+        display: none;
+    }
+    .btn-header .sign{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .more{
+        display: none;
+    }
+    .my-button1{
+        display: none;
+    }
+}
+
+
+
+.logo-header{
+    color: white;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding:25px;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: #8B4513;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.sous-nav{
+    display: none;
+}
+
+.btn-header button{
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: transparent;
+    border: 2px solid #8B4513;
+    cursor: pointer;
+}
+
+/* .my-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.my-button:hover {
+    background-color: #0056b3;
+}
+ */
+
+.btn-header button >a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-header a:hover{
+    color: #fff;
+}
+
+.btn-header button:hover{
+    border-radius: 10px;
+    background-color: #8B4513;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.btn-commande,
+.btn-menu,
+.btn-info {
+    background-color: #8B4513;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: white;
+}
+
+.btn-commande:hover,
+.btn-menu:hover,
+.btn-info:hover {
+    background-color: #703B1D;
+    color: #ffffff;
+}
+
+.section-accueil {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px;
+}
+
+.section-accueil h2{
+    margin: 25px;
+}
+
+.section-accueil > p{
+    margin-bottom: 20px;
+}
+
+.section-apropos{
+    background-color: #8B4513;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 19px;
+}
+
+.section-apropos,
+.section-produits,
+.section-temoignages,
+.section-contact {
+    margin-top: 50px;
+}
+
+/* .section-contact form input[type=text]{
+    background-color: red;
+} */
+
+.section-contact{
+    background-color: #8B4513;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 19px;
+}
+
+form input[type="text"], input[type="email"],input[type="submit"]{
+    /* display: flex; */
+    margin: 10px;
+}
+
+form button{
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form button:hover{
+    background-color: #703B1D;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#nom, #email,#message{
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+}
+
+.section-temoignages{
+    background-color: #8B4513;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 19px;
+}
+
+
+.produit{
+    width: 100%;
+}
+.image-style{
+    display:  flex;
+    background-color: #8B4513;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.imageA{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    height: 318px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.image1-infos,
+.image2-infos,
+.image3-infos {
+    background-color: #fff;
+    /* padding: 0px 0px 100px 0px; */
+    border-radius: 10px;
+    margin-bottom:20px ;
+
+}
+
+/* .image2-infos img{
+    width: 400px;
+} */
+
+.image1-infos h3,
+.image2-infos h3,
+.image3-infos h3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.image1-infos .btnPanier,
+.image2-infos .btnPanier,
+.image3-infos .btnPanier{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image1-infos .btnPanier > button,
+.image2-infos .btnPanier > button,
+.image3-infos .btnPanier > button{
+    padding: 10px 70px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #8B4513;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.image1-infos .btnPanier > button:hover,
+.image2-infos .btnPanier > button:hover,
+.image3-infos .btnPanier > button:hover{
+    background-color: #703B1D;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.croissant-h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.p-decouvert{
+    margin-bottom: 10px;
+}
+
+.temoinage {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #8B4513;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+footer p {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    background-color: #ffffff8d;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 80px 0px 80px;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+li h1{
+    cursor: pointer;
+}
+
+.my-button1{
+    padding: 5px 18px;
+    border: none;
+    color: black;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+main{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* width: ; */
+    overflow: hidden;
+    /* margin: 0; */
+    border: 10px solid black;
+}
+
+.gtion_espace{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    border-radius: 15px;
+    height: 50vh;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    width: 100vh;
+}
+
+.connexion-titre h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    /* margin-bottom: 20px; */
+    margin-top: 90px;
+}
+
+.connexion-titre p{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+}
