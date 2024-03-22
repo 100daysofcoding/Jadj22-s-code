@@ -1,0 +1,43 @@
+.form-check{
+    --border: #D1D5DB;
+    position: relative;
+    font-size: 30px;
+    --cursor: #89909E;
+}
+
+.form-check input{
+    position: absolute;
+    opacity: 0;
+}
+
+
+.form-check label{
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    grid-template-areas: "checkbox label";
+    gap: .7em;
+}
+
+.form-check label::before,
+.form-check label::after{
+    grid-area: checkbox;
+    content: '';
+    display: block;
+}
+
+.form-check label::before{
+    content: '';
+    grid-area: checkbox;
+    display: block;
+    width: 100%;
+    height: 1em;
+    border-radius: 1em;
+    border:  solid 1px var(--border);
+    margin-top: .1em;
+}
+
+.form-check label::after{
+    width: 1em;
+    height: 1em;
+    background-color: var(--cursor);
+}
