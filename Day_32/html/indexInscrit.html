@@ -4,61 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="../css/styleInscrit.css">
+    <link rel="stylesheet" href="../css/styleInscrit.css">
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><h1>Marcoffe</h1></li>
-            <li><button class="my-button1"><i class="fa-solid fa-ellipsis"></i></button></li>
-        </ul>
-    
-    <div class="connexion-titre">
-        <h2>Créer votre compte</h2>
-        <p>Votre destination préférée pour des croissants croustillants.</p>
-    </div>
-</nav>
-    <main>
-        <!-- <h1>Bonjour,<br> bienvenue à nouveau</h1> -->
-        <div class="gtion_espace">
-            <div class="flex-apple-gogle">
-                <div class="btn-google">
-                    <a href="#" class="google">S'inscrire avec Google</a>
-                    <a href="#" class="apple">S'inscrire avec Apple</a>
-                </div>
-            </div>
 
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Marcoffe</a></li>
+            <li><a href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
+        </ul>
+    </nav>
+    
+    <main>
+            <div class="entete">
+                <h2>Créer un Compte</h2>
+                <p>Votre destination préférée pour des croissants croustillants.</p>
+            </div>
             <div class="connectEmailPass">
-                <!-- <label for="email"></label> -->
-                <div class="input-for-input">
-                    <input type="text" id="name" name="nom" placeholder="Nom"/>
+                    <input type="text" name="name" id="name" placeholder="Nom">
                     <input type="text" id="email" name="email" placeholder="Email">
                     <input type="password" id="password" name="password" placeholder="Mot de passe">
-                </div>
-                
-                <div class="text-remenbe">
-                    <div class="check">
-                        <input type="checkbox" id="cgv" name="cgv">
-                        <label for="cgv" class="custom-checkbox">J'accepte les conditions</label>
-                        
-                    </div>
-                    <div class="text-style">
-                        <a href="#">Mot de passe oublié ?</a>
-                    </div>
-                    
-                </div>
-                
             </div>
+
             <div class="btn">
-                <button>Se connecter</button>
-            
-            <div class="reinit">
-                <!-- <a href="#">Vous avez pas de compte ?</a> -->
-                <a href="#">S'inscrire</a>
+                <a href="../html/Homepage.html" >S'inscrire</a>
             </div>
-        </div>
-        </div>
+            
+            <div class="option">
+                <a href="../html/MotDePasseOublie.html" class="btn1">Vous avez pas de compte ?</a>
+                <a href="../html/indexConnect.html" class="btn2"> Connecter-vous</a>
+            </div>
     </main>
+    <footer>
+            <p>&copy; 2024 Marcoffe. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
