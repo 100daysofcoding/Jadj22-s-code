@@ -68,7 +68,7 @@
             <h2>Bienvenue à Marcoffe</h2>
             <p>Votre destination préférée pour des croissants croustillants et d'autres délices de boulangerie.</p>
             <button class="btn-commande">Commander maintenant</button>
-            <button class="btn-menu">Voir notre menu</button>
+            <a href="../html/index2.html" class="btn-menu">Voir notre menu</a>
         </section>
         <section class="section-apropos">
             <h2>À propos de nous</h2>
@@ -84,14 +84,14 @@
                         <img src="../images/croissants.jpg" class="imageA" alt="">
                         <h3>Croissant au beurre</h3>
                         <div class="btnPanier">
-                            <button>Ajouter au panier</button>
+                            <!-- <button>Ajouter au panier</button> -->
                         </div>
                     </div>
                     <div class="image2-infos">
                         <img src="../images/gato.jpg" class="imageA" alt="">
                         <h3>Gâteaux à la crème</h3>
                         <div class="btnPanier">
-                            <button>Ajouter au panier</button>
+                            <!-- <button>Ajouter au panier</button> -->
                         </div>
                         
                     </div>
@@ -99,7 +99,7 @@
                         <img src="../images/baguette.jpg" class="imageA" alt="">
                         <h3>Baguette</h3>
                         <div class="btnPanier">
-                            <button>Ajouter au panier</button>
+                            <!-- <button>Ajouter au panier</button> -->
                         </div>
                     </div>
                 </div>
@@ -109,15 +109,52 @@
             </div>
 
             <div>
-                <label for="processeur">Pattiserie :</label>
-                <select id="processeur" required>
-                    <option value="Obligation"></option>
-                    <option value="Intel i9">Boo</option>
-                    <option value="AMD Ryzen 9">AMD Ryzen 9</option>
-                    <option value="Intel i7">Intel i7</option>
-                    <option value="AMD Ryzen 7">AMD Ryzen 7</option>
-                    <option value="Intel i9-12900K">Intel i9-12900K</option>
-                    <option value="AMD Ryzen 9 5950X">AMD Ryzen 9 5950X</option>
+                <label for="patisserie">Pains :</label>
+                <select id="patisserie" required>
+                    <option value="Obligation">Baguettes</option>
+                    <option value="croissants">Croissants</option>
+                    <option value="pains au chocolat">Pains au chocolat</option>
+                    <option value="brioches">Brioches</option>
+                    <option value="Pains aux céréales">Pains aux céréales</option>
+                    <option value="pains aux noix">Pains aux noix</option>
+                    <option value="pains spéciaux sans gluten">Pains spéciaux sans gluten</option>
+                </select>
+
+                <label for="patisserie">Pâtisseries individuelles :</label>
+                <select id="patisserie" required>
+                    <option value="Obligation">Éclairs</option>
+                    <option value="religieuses">Religieuses</option>
+                    <option value="tartes aux fruits">tartes aux fruits</option>
+                    <option value="houx à la crème">Houx à la crème</option>
+                </select>
+
+                <label for="patisserie">Gâteaux :</label>
+                <select id="patisserie" required>
+                    <option value="Gâteaux d'anniversaire">Gâteaux d'anniversaire</option>
+                    <option value="gâteaux aux fruits">Gâteaux aux fruits</option>
+                    <option value="gâteaux au chocolat,">Gâteaux au chocolat,</option>
+                    <option value="cheesecakes">Cheesecakes</option>
+                </select>
+
+                <label for="patisserie">Petits gâteaux :</label>
+                <select id="patisserie" required>
+                    <option value="Obligation">Macarons</option>
+                    <option value="cupcakes">Cupcakes</option>
+                    <option value="petits fours">Petits fours</option>
+                </select>
+
+                <label for="patisserie">Desserts traditionnels :</label>
+                <select id="patisserie" required>
+                    <option value="Obligation">Mille-feuilles</option>
+                    <option value="flans">flans</option>
+                    <option value="crèmes brûlées">Crèmes brûlées</option>
+                </select>
+
+                <label for="patisserie">Confiseries :</label>
+                <select id="patisserie" required>
+                    <option value="Obligation">Chocolats</option>
+                    <option value="bonbons">Bonbons</option>
+                    <option value="nougats">Nougats</option>
                 </select>
             </div>
 
