@@ -275,12 +275,12 @@ form button:hover{
     cursor: pointer;
 }
 
-.croissant-h3{
+.service .service-title{
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.p-decouvert{
+.service-description{
     margin-bottom: 10px;
 }
 

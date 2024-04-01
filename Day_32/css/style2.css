@@ -80,21 +80,6 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-/* .my-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.my-button:hover {
-    background-color: #0056b3;
-}
- */
 
 .btn-header button >a{
     text-decoration: none;
@@ -169,9 +154,6 @@ main {
     margin-top: 50px;
 }
 
-/* .section-contact form input[type=text]{
-    background-color: red;
-} */
 
 .section-contact{
     background-color: #8B4513;
@@ -243,19 +225,24 @@ form button:hover{
 .image2-infos,
 .image3-infos {
     background-color: #fff;
-    /* padding: 0px 0px 100px 0px; */
     border-radius: 10px;
     margin-bottom:20px ;
 
 }
 
-/* .image2-infos img{
-    width: 400px;
-} */
+.titre-milieu-prod{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
-.image1-infos h3,
-.image2-infos h3,
-.image3-infos h3{
+.image1-infos h3,h4,
+.image2-infos h3,h4,
+.image3-infos h3,h4{
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -290,12 +277,12 @@ form button:hover{
     cursor: pointer;
 }
 
-.croissant-h3{
+.service .service-title{
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.p-decouvert{
+.service-description{
     margin-bottom: 10px;
 }
 
