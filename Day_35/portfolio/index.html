@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio responsive avec mode sombre</title>
+</head>
+<body>
+    <nav>
+        <h1>
+            <span class="material-symbols-outlined">
+            logo_dev
+        </span>
+            Joel Adjanke
+        </h1>
+
+        <ul>
+            <li>
+                jadjdev2@gmail.com
+                <span class="material-symbols-outlined">
+                    call_made
+                </span>
+            </li>
+            <li id="dark-light-mode" onclick="changeDarkMode()">Dark mode</li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-left">
+            <small>
+                <span class="material-symbols-outlined">
+                    home_pin
+                </span>Lomé Togo
+            </small>
+            <h1>Hello,<br>
+                je suis Adjanke Joel
+            </h1>
+            <p>Je suis un passionné d'informatique, spécialisé en génie logiciel. 
+                J'adore créer des applications et des sites web innovants qui 
+                résolvent des problèmes réels. Mon parcours m'a permis 
+                d'acquérir une solide expérience en développement 
+                d'applications mobiles et web, ainsi qu'en conception 
+                d'interfaces utilisateur.
+            </p>
+            <div class="links">
+                <a href="jadjdev2@gmail.com" target="_blank">Email
+                    <span class="material-symbols-outlined">
+                        call_made
+                    </span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/joel-adjanke-21875626a/" target="_blank">linkedin
+                    <span class="material-symbols-outlined">
+                        call_made
+                    </span>
+                </a>
+
+                <a href="https://www.github.com/jadj22" target="_blank">Github
+                    <span class="material-symbols-outlined">
+                        call_made
+                    </span>
+                </a>
+
+                <a href="#">Curriculum
+                    <span class="material-symbols-outlined">
+                        call_made
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="header-right">
+            <img src="images/Joel-me.jpg" alt="Profile-photo">
+        </div>
+    </header>
+    
+    <section class="about">
+        <h4>À propos de moi</h4>
+        <p>Je suis un informaticien spécialisé en génie logiciel, 
+            passionné par la création d'applications et de sites web 
+            innovants. Mon objectif est de résoudre des problèmes concrets 
+            grâce à mes compétences en développement.
+            <br><br>
+            Mon expérience couvre une variété de domaines, allant 
+            du développement d'applications mobiles à la conception 
+            d'interfaces utilisateur. J'ai hâte de mettre mes compétences 
+            au service de projets passionnants et stimulants.
+        </p>
+
+        <img class="signature" src="images/signature-removebg-preview (3).png" alt="signature">
+    </section>
+    <section class="images">
+        <div class="image-card">
+            <div class="image-left">
+                <img src="images/Apple-Developer-Program.jpg" alt="Apple_dev">
+            </div>
+            <div class="image-right">
+                <h1>Apple Developer Program</h1>
+                <p>En tant que membre du Apple Developer Program, 
+                    j'ai bénéficié d'un accès privilégié à des outils et 
+                    des ressources essentiels pour le développement 
+                    d'applications iOS. J'ai ainsi pu développer plusieurs 
+                    applications, lesquelles ont 
+                    été des projets d'exemple illustrant mes compétences en 
+                    programmation et en conception d'interfaces utilisateur.</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <div class="image-left">
+                <img src="images/Swift.jpg" alt="">
+            </div>
+            <div class="image-right">
+                <h1>Swift Student Challenge </h1>
+                <p>Ma participation au Swift Student Challenge d'Apple m'a 
+                    permis de concevoir une application iOS innovante, 
+                    mettant en avant mes compétences en programmation Swift 
+                    et mon aptitude à résoudre des problèmes de manière créative. 
+                    Ce défi m'a également offert une occasion unique d'explorer les 
+                    dernières technologies d'Apple et de les appliquer dans un 
+                    projet concret.</p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <div class="image-left">
+                <img src="images/apps.png" alt="">
+            </div>
+            <div class="image-right">
+                <h1>Builder apps</h1>
+                <p>j'ai créé diverses applications mobiles mettant en œuvre 
+                    des concepts avancés tels que CoreData pour la gestion 
+                    des données et SwiftUI pour la création d'interfaces utilisateur 
+                    modernes et intuitives. Ces projets m'ont permis de démontrer 
+                    ma capacité à concevoir et à développer des applications 
+                    mobiles fonctionnelles et attrayantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>
+            <span class="material-symbols-outlined">
+                logo_dev
+            </span>
+            Joel Adjanke
+        </h3>
+        <p>&copy;Joel Adjanke 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
