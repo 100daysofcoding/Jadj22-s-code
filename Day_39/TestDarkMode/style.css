@@ -24,4 +24,5 @@ span{
     margin-top: 60px;
     color: var(--text-color);
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
