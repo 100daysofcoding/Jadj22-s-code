@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function(){
     typewriter.typeString('Hello,<br> je suis Adjanke Joel')
         .pauseFor(2500)
         .deleteAll()
-        .typeString('Découvrez mes projets.')
-        .pauseFor(2500)
-        .deleteAll()
+        // .typeString('Découvrez mes projets.')
+        // .pauseFor(2500)
+        // .deleteAll()
         .start();
 });

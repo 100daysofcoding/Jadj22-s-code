@@ -1,0 +1,27 @@
+
+:root{
+    --background:white;
+    --text-color:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+span{
+    margin-top: 60px;
+    color: var(--text-color);
+    cursor: pointer;
+}
