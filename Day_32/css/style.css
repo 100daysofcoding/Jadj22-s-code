@@ -6,102 +6,94 @@
     font-family: "Roboto", sans-serif;
 }
 
-header {
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #8c4821;
+    padding: 10px 30px;
     display: flex;
-    justify-content: space-around;
-    height: 55px;
     align-items: center;
-    overflow: hidden;
-    width: 100%;
-    background-color: #8B4513;
+    justify-content: space-between;
+    height: 70px;
 }
 
-@media screen and (max-width: 1000px){
-    .nav-header{
-        display: none;
-    }
-    .btn-header .sign{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1000px){
-    .more{
-        display: none;
-    }
-    .my-button1{
-        display: none;
-    }
-}
-
-
-
-.logo-header{
-    color: white;
+.logo{
+    color: #fff;
+    position: relative;
     cursor: pointer;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 30px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+nav ul li{
+    list-style-type: none;
 }
-
 nav ul li a{
+    color: #fff;
     text-decoration: none;
-    color: white;
-    padding:25px;
-    font-size: 18px;
+    padding: 40px 20px;
+}
+
+
+.menu-icon{
+    color: #fff;
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 nav ul li a:hover{
     color: #8B4513;
     border-radius: 3px;
     background-color: #fff;
+    padding: 40px 20px;
     transition: 0.3s ease-in-out;
 }
 
-.sous-nav{
-    display: none;
-}
+@media screen and (max-width:1200px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #8c4821;
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+        overflow: hidden;
+    }
+    nav ul li a{
+    padding: 10px 20px;
+    }
 
-.btn-header button{
-    padding: 12px;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 10px;
-    border: transparent;
-    border: 2px solid #8B4513;
-    cursor: pointer;
-}
+    nav ul li a:hover{
+    padding: 10px 20px;
 
+    }
 
-.btn-header button >a{
-    text-decoration: none;
-    color: black;
-}
+    nav ul li{
+        padding: 20px;
+    }
 
-.btn-header a:hover{
-    color: #fff;
-}
+    .menu-icon{
+        display: block;
+    }
 
-.btn-header button:hover{
-    border-radius: 10px;
-    background-color: #8B4513;
-    color: white;
-    border: 2px solid white;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
+    #menuList{
+        transition: all 0.5s;
+    }
 }
 
 main {
     padding: 20px;
 }
+
 
 .btn-commande,
 .btn-menu,
@@ -118,6 +110,13 @@ main {
     font-size: 17px;
 }
 
+
+@media screen and (max-width:600px) {
+    .section-accueil .btnAndLink .btn-commande{
+        margin-bottom: 15px;
+    }
+}
+
 .btn-commande:hover,
 .btn-menu:hover,
 .btn-info:hover {
@@ -130,6 +129,14 @@ main {
     padding: 50px 0;
     font-size: 20px;
 }
+
+.section-accueil .btnAndLink{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 
 .section-accueil h2{
     margin: 25px;
@@ -154,9 +161,7 @@ main {
     margin-top: 50px;
 }
 
-/* .section-contact form input[type=text]{
-    background-color: red;
-} */
+
 
 .section-contact{
     background-color: #8B4513;
@@ -167,7 +172,7 @@ main {
 }
 
 form input[type="text"], input[type="email"],input[type="submit"]{
-    /* display: flex; */
+
     margin: 10px;
 }
 
@@ -228,15 +233,13 @@ form button:hover{
 .image2-infos,
 .image3-infos {
     background-color: #fff;
-    /* padding: 0px 0px 100px 0px; */
+
     border-radius: 10px;
     margin-bottom:20px ;
 
 }
 
-/* .image2-infos img{
-    width: 400px;
-} */
+
 
 .image1-infos h3,
 .image2-infos h3,
