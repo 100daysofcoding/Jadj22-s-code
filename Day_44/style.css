@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    border: 1px solid red;
+    height: 100vh;
+    /* width: 100%; ne jamais mettre de width 100% dans ce pas */
+    margin-right:5%;
+    margin-left:5%;
+}
+
+nav{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 7%;
+}
+
+.links ul{
+    
+    border: 1px solid coral;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+.links ul li a{
+    border: 1px solid rgb(5, 95, 65);
+    text-decoration: none;
+    color: black;
+    margin: 50px;
+}
+
+main{
+    display: flex;
+    border: 2px solid rgb(5, 71, 102);
+    margin-top: 2%;
+}
+
+main .headPartImg{
+    border: 2px solid rgb(210, 16, 177);
+    background-image: url(images/LightHouse.jpg);
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+
+    main .headPartImg{
+        height: 60vh;
+    }
+    
+}
+
+.headPartItems{
+    margin: 7%;
+}
+
+.headPartItems h2{
+    font-size: 45px;
+    border: 2px solid rgb(223, 149, 187);
+}
+
+.headPartItems p{
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+.headPartItems button{
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+
