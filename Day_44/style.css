@@ -83,3 +83,53 @@ main .headPartImg{
 }
 
 
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 221, 255);
+    margin-top: 50px;
+}
+
+section .milieu{
+   
+    border: 1px solid rgb(0, 221, 255);
+
+}
+
+.milieu .items-milieu .items-milieu-haut h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.milieu .items-milieu .items-milieu-haut p{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.container-sous-items-milieu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.sous-items-milieu1{
+    /* display: flex; */
+    justify-content: center;
+    text-align: justify;
+    margin-right: 70px;
+
+}
+
+.sous-items-milieu1 i,h4,p{
+    display: flex;
+    justify-content: center;
+}
+
+.sous-items-milieu1 h4,p{
+    margin-top: 10px;
+}
